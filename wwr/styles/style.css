@@ -65,7 +65,7 @@ nav a:hover {
     font-size: 1.8em;
 } 
 
-footer, footer a{
+footer, footer p a{
     background-color: #f79c4c;
     color: #3E3E3E;
     text-decoration: none;
