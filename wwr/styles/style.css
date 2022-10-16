@@ -4,11 +4,17 @@
 }
 
 .logo, .icon{
-    width: 80px;
+    max-width: 200px;
+    margin: 40px;
+    padding-left: 0px;
 }
+
 body {
     background-color: #3E3E3E;
     color: white;
+    font-family: Inter,Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
   }
 
 nav a,
@@ -17,17 +23,21 @@ nav a,
 .button-box,
 main section {
   text-align: center;
-  
 }
 
+
+.card-img {
+  border: 10px solid #d9c2a3;
+}
+main section img {
+  box-sizing: border-box;
+}
 #background {
   height: 725px;
 }
-
-
 header {
   background-color: #f79c4c;
-
+  padding-bottom: 20px;
 }
 header a {
     text-decoration: none;
@@ -35,6 +45,7 @@ header a {
 }
 nav a{
     color:#324C6F;
+    padding: 0px 20px;
 }
 nav a:hover {
   background-color: #cb5f00;
@@ -46,16 +57,26 @@ nav a:hover {
   background-color: #f79c4c;
   color:#324C6F;
   text-decoration: none;
+  padding: 15px 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
 }
 
+.join{
+ border: solid  #cb5f00 2px;
+
+}
 .book:hover,
 .join:hover {
   background-color: #cb5f00;
   color: white;
+
 }
 
 #background {
     background-color: #f79c4c;    
+    margin-top: 40px;
 }
 
 
@@ -63,11 +84,19 @@ nav a:hover {
     background-color: #f79c4c;     
     color: #3E3E3E;  
     font-size: 1.8em;
+    line-height: 1.5em;
+    padding: 35px;
+    
 } 
 
+.msg p {
+  padding-bottom: 15px;
+
+}
 footer, footer a{
     background-color: #f79c4c;
     color: #3E3E3E;
+    padding: 10px 10px;
 
 }
 footer a{
@@ -78,6 +107,10 @@ footer a:hover{
     color: white;
 }
 
+footer .social img {
+  padding-top: 15px;
+  padding-left: 0px;
+}
 #hero-img{
     width:100%;
 }
@@ -85,13 +118,28 @@ footer a:hover{
 footer p {
     font-size: 1.2em;
 }    
-      
+
+
+.home-title {
+  font-family: "College Semi-condensed","Georgia",Monaco ;
+  font-size: 3em;
+}
+h1,h2,h4 {
+  font-family: "College Semi-condensed","Georgia",Monaco ;
+}
 h1{
     font-size: 3em;
+
 }
 h2{
     font-size: 2.5em;
+    margin: 0;
 }    
 h4{
     font-size: 1.6em;
+}
+.card-img{
+  margin: 40px;
+  max-width: 1260px;
+  max-height: 980px;
 }

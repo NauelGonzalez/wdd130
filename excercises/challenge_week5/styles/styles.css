@@ -1,0 +1,37 @@
+*{
+   
+    margin:auto;
+    padding: auto;
+    width: auto;
+    text-align: center;
+}
+
+.maincontainer{
+
+    margin:auto;
+    padding: auto;
+    text-align: center;
+}
+
+.maincontainer div{
+background-color: darkgray;
+max-width: 75%;
+margin:auto;
+padding: auto;
+text-align: center;
+}
+
+.top{
+    max-width: 100%;
+}
+
+.bottom{
+    display: inline-block;
+    max-width: 20%;
+    margin:40px;
+    border-radius: 50%;
+    padding: auto;
+    text-align: center;
+    border: 10px solid darkslategray;
+}
+
