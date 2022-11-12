@@ -113,6 +113,10 @@ footer .social img {
 #hero-img{
     width:100%;
 }
+#hero-img_things{
+  width: 100%;
+  opacity:75% ;
+}
 
 footer p {
     font-size: 1.2em;
@@ -149,12 +153,12 @@ align-self: center;
   justify-self: left;
   align-self: center;
 }
-#hero {
+#hero, #hero_things {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
 
 }
-#hero-box {
+#hero-box ,#hero-box_things {
   grid-column: 1/4;
   grid-row: 1/3;
   z-index: -1;
@@ -168,6 +172,11 @@ align-self: center;
 .home-grid{
   display: grid;
   grid-template-columns: repeat(10,1fr);
+}
+.things-grid{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+
 }       
 .card-img, .mountains {
   width: 100%;
@@ -190,6 +199,55 @@ align-self: center;
   grid-row: 2/3;
 
 } 
+
+.landscape-card 
+{
+  grid-column:1/4 ;
+  grid-row: 2/4;
+  align-self: flex-end;
+}
+.landscape-text 
+{
+  grid-column:4/11 ;
+  grid-row: 2/4;
+  align-self: flex-start;
+  text-align: left;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 5%;
+}
+.food-card 
+{
+  grid-column:8/11 ;
+  grid-row: 4/5;
+  align-self: flex-end;
+}
+.food-text 
+{
+  grid-column:1/8 ;
+  grid-row: 4/5;
+  align-self: flex-start;
+  align-items: center;
+  text-align: left;
+  margin-right: 50px;
+  margin-top: 5%;
+}
+.tips-card 
+{
+  grid-column:1/4 ;
+  grid-row: 6/7;
+  align-self: flex-end;
+}
+.tips-text 
+{
+  grid-column:4/11 ;
+  grid-row: 6/7;
+  align-self: flex-start;
+  text-align: left;
+  align-items: center;
+  margin: 50px;
+  margin-top: 5%;
+}
 
 #background {
   grid-column:1/11 ;
