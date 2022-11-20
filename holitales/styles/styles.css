@@ -1,0 +1,236 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ibarra+Real+Nova&family=Leckerli+One&family=Montserrat:wght@300&display=swap');
+
+/*
+* {
+    border-color: black ;
+    border-style: solid;
+    border-width: 2px;
+}
+*/
+#main-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    
+
+  }
+
+.header-grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+}
+
+#logo{
+    padding-top: 5px;
+    justify-self: left;
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 1;
+}
+.logo {
+    max-width: 250px;
+    margin: 40px;
+    padding-left: 0px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+
+
+header {
+    background-color: #D6A6A2;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border-radius: 10px 50px;
+    margin-bottom: 2%
+  }
+  header a {
+      font-size: 3em;
+      text-decoration: none;
+  }
+  #nav-links{
+    grid-column: 2/6;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav{
+    font-family: "Dancing Script","Leckerli One";
+  }
+  nav a{
+      color:white;
+
+      padding: 0px 20px;
+      text-align: center;
+      align-self: center;
+  }
+  nav a:hover {
+    background-color: #81667A;
+    color: white;
+  }
+
+
+  #hero-grid {
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr;
+    margin: 0px,50px;
+  
+  }
+  #hero-img{
+    width:100%;
+}
+  #hero-box {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    z-index: -1;
+  }
+  
+  #hero-title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 70px;
+    margin-left: 50px;
+    font-size: 3em;
+    color: white;
+    font-family: "Dancing Script","Leckerli One";
+  }
+  #hero-text {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    margin-right: 50px;
+    font-size: 2em;
+    color: white;
+    font-family: "Monserrat Light", "Ibarra Real", Helvetica;
+    text-align: right;
+  }
+  
+
+
+main img {
+    float: left;
+    padding: 25px;
+}
+
+.author{
+    text-align: right;
+}
+
+.story-profile{
+    box-shadow: 5px 5px 10px #6f7364;
+    border: 2px solid black;  
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+main h2 {
+    font-family: "Dancing Script","Leckerli One";
+    color:  #81667A;
+    font-size: 3em;
+}
+main p {
+    font-family: "Monserrat Light", "Ibarra Real", Helvetica;
+    font-size: 1.5em;
+}
+
+
+footer .social img {
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+footer {
+    background-color:#D1F0B1 ;
+    padding: 25px ;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p {
+    font-size: 1.25em;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+}    
+footer a{
+    text-decoration: none;
+  }
+
+  footer a:hover{
+      background-color: #D6A6A2;
+      color: white;
+  }
+  
+  footer .social img {
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+
+
+
+
+  
+  #fun-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr;
+    margin: 0px,50px;
+  
+  }
+  #fun-hero-img{
+    width:100%;
+}
+  #fun-hero-box {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    z-index: -1;
+  }
+  
+  #fun-hero-title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 70px;
+    margin-left: 50px;
+    font-size: 3em;
+    color: white;
+    font-family: "Dancing Script","Leckerli One";
+  }
+  #nav-stories {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    justify-content: space-evenly;
+    margin-top: -10%;
+    font-size: 2em;
+    color: white;
+    font-family: "Monserrat Light", "Ibarra Real", Helvetica;
+    text-align: right;
+  }
+  
+
+
+  .facts-grid {
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr;
+  
+  }
+
+  #facts-list{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+  }
+  #facts-img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 75%;
+
+  }
+  #facts-text{
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
