@@ -24,9 +24,27 @@
         </header>
        
         <div id="hero-grid">
-            <div id="hero-box">
-                <img id="hero-img" src="images/pexels-josh-hild-4256852-2.jpg" alt="book infornt of fireplace">
-            </div>
+           <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <img class='hero-image'src="images/book in bed.jpg" style="width:100%">
+                </div>
+               
+                <div class="mySlides fade">
+                <img class='hero-image'src="images/pexels-josh-hild-4256852.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                <img class='hero-image' src="images/book in bed2.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img class='hero-image' src="images/27073285979_d2de6cf479_c.jpg" style="width:100%">
+                </div>
+              </div>
+
             <div id="hero-title">
                 <h1 >Christmas Time!</h1>
             </div>
@@ -34,8 +52,16 @@
                 <h4>Every story shared
                      is a chance to make someone feel less alone... </h4>
             </div>
+          
         </div>
-       
+                    <!-- The dots/circles -->
+          
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
        
         <main class="story">
                <img class="story-profile" src="images/profile.png" alt="profilepic" >
@@ -70,3 +96,57 @@
 </body>
 
 </html>
+
+
+<script>
+let aslideIndex = 0;
+ashowSlides();
+
+function ashowSlides() {
+  let a;
+  let aslides = document.getElementsByClassName("mySlides");
+  for (a = 0; a < aslides.length; a++) {
+    aslides[a].style.display = "none";
+  }
+  aslideIndex++;
+  if (aslideIndex > aslides.length) {aslideIndex = 1}
+  aslides[aslideIndex-1].style.display = "block";
+  setTimeout(ashowSlides, 4000); // Change image every 2 seconds
+}
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+
+</script>
